@@ -27,10 +27,10 @@ html {
   height: 100%;
   position: relative;
 }
-.content-wrapper .home-header {
+.content-wrapper .welcome-header {
   position: relative;
 }
-.content-wrapper .home-header .ring-top {
+.content-wrapper .welcome-header .ring-top {
   z-index: -9;
   width: 100px;
   background-color: #FFE81B;
@@ -43,13 +43,13 @@ html {
   align-items: center;
   justify-content: center;
 }
-.content-wrapper .home-header .ring-top .hole {
+.content-wrapper .welcome-header .ring-top .hole {
   width: 75px;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background-color: #00B0FF;
 }
-.content-wrapper .home-header .blue-shade-top-lg {
+.content-wrapper .welcome-header .blue-shade-top-lg {
   z-index: -10;
   width: 1400px;
   aspect-ratio: 1/1;
@@ -59,18 +59,18 @@ html {
   top: -1200px;
   left: -620px;
 }
-.content-wrapper .home-header .logo {
+.content-wrapper .welcome-header .logo {
   font-size: 32px;
   font-weight: 600;
   color: #ffffff;
 }
-.content-wrapper .home-header h2 {
+.content-wrapper .welcome-header h2 {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
 }
-.content-wrapper .home-header p {
+.content-wrapper .welcome-header p {
   margin-top: 5px;
   color: #fff;
   font-size: 12px;
@@ -124,6 +124,49 @@ html {
 .content-wrapper .auth-header p {
   color: #fff;
   font-size: 12px;
+  margin-top: 5px;
+}
+.content-wrapper .home-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.content-wrapper .home-header .blue-shade-top-sm {
+  z-index: -10;
+  width: 1400px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #00B0FF;
+  position: absolute;
+  top: -1250px;
+  left: -620px;
+}
+.content-wrapper .home-header .user-greeting {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.content-wrapper .home-header .user-greeting h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content-wrapper .home-header .user-greeting p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.content-wrapper .home-header .btn-setting {
+  border-radius: 12px;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-wrapper .home-header .btn-setting i {
+  color: #00B0FF;
 }
 
 .login-selection {
@@ -162,6 +205,7 @@ html {
 
 .auth-form {
   margin-top: 150px;
+  margin-bottom: 100px;
   width: 100%;
 }
 .auth-form form {
@@ -204,6 +248,72 @@ html {
   border: none;
   outline: none;
   width: 100%;
+}
+.auth-form .option {
+  font-size: 14px;
+  color: #444;
+  margin-top: 20px;
+  text-align: center;
+}
+.auth-form .option a {
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 4px;
+}
+
+.menu-selection {
+  margin-top: 150px;
+}
+.menu-selection h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+.menu-selection .menu-group {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+.menu-selection .menu-group .card {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 4px 1px #DDD;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.menu-selection .menu-group .card .icon {
+  flex-shrink: 0;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  background-color: #00B0FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-selection .menu-group .card .icon i {
+  color: #fff;
+}
+.menu-selection .menu-group .card .title {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu-selection .menu-group .card .title h3 {
+  font-size: 14px;
+  color: #444;
+}
+.menu-selection .menu-group .card .title p {
+  font-size: 8px;
+  color: #444;
+}
+.menu-selection .menu-group .card .arrow i {
+  color: #00B0FF;
+  font-size: 12px;
 }
 
 footer {
