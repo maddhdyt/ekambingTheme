@@ -18,42 +18,46 @@ html {
 
 .container {
   padding: 0 40px;
+  height: 100%;
   margin: 0 auto;
 }
 
-.ring-top {
+.content-wrapper {
+  padding-top: 50px;
+  height: 100%;
+  position: relative;
+}
+.content-wrapper .home-header {
+  position: relative;
+}
+.content-wrapper .home-header .ring-top {
   z-index: -9;
   width: 100px;
   background-color: #FFE81B;
   aspect-ratio: 1/1;
   border-radius: 100%;
   position: absolute;
-  right: -30px;
-  top: -20px;
+  right: -70px;
+  top: -90px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ring-top .hole {
+.content-wrapper .home-header .ring-top .hole {
   width: 75px;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background-color: #00B0FF;
 }
-
-.blue-shade-top-lg {
+.content-wrapper .home-header .blue-shade-top-lg {
   z-index: -10;
   width: 1400px;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background-color: #00B0FF;
   position: absolute;
-  top: -1100px;
+  top: -1200px;
   left: -620px;
-}
-
-.content-wrapper {
-  padding-top: 50px;
 }
 .content-wrapper .home-header .logo {
   font-size: 32px;
@@ -68,6 +72,56 @@ html {
 }
 .content-wrapper .home-header p {
   margin-top: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+.content-wrapper .auth-header {
+  position: relative;
+}
+.content-wrapper .auth-header .blue-shade-top-lg {
+  z-index: -10;
+  width: 1400px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #00B0FF;
+  position: absolute;
+  top: -1200px;
+  left: -620px;
+}
+.content-wrapper .auth-header .controller {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.content-wrapper .auth-header .controller .btn-back {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-wrapper .auth-header .controller .btn-back i {
+  color: #00B0FF;
+}
+.content-wrapper .auth-header .controller .btn-back:hover {
+  background-color: #00B0FF;
+}
+.content-wrapper .auth-header .controller p {
+  color: #fff;
+  font-size: 12px;
+}
+.content-wrapper .auth-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 23px;
+}
+.content-wrapper .auth-header p {
   color: #fff;
   font-size: 12px;
 }
@@ -104,6 +158,95 @@ html {
 }
 .login-selection .btn .arrow {
   font-size: 12px;
+}
+
+.auth-form {
+  margin-top: 150px;
+  width: 100%;
+}
+.auth-form form {
+  width: 100%;
+}
+.auth-form form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.auth-form form .form-group .icon {
+  position: absolute;
+  right: 25px;
+}
+.auth-form form .form-group .icon i {
+  font-size: 14px;
+  color: #444;
+}
+.auth-form form .form-group .form-control {
+  width: 100%;
+  padding: 18px 25px;
+  border-radius: 8px;
+  background-color: rgba(0, 179, 255, 0.1647058824);
+  border: none;
+  outline: none;
+  color: #444;
+}
+.auth-form form .form-group .form-control::-moz-placeholder {
+  color: #9a9a9a;
+}
+.auth-form form .form-group .form-control::placeholder {
+  color: #9a9a9a;
+}
+.auth-form form .btn-submit {
+  padding: 18px 25px;
+  border-radius: 8px;
+  background-color: #00B0FF;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+footer {
+  height: 220px;
+  position: relative;
+  bottom: 0 !important;
+}
+footer .blue-ring {
+  z-index: -9;
+  width: 100px;
+  background-color: #00B0FF;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  position: absolute;
+  left: -70px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .blue-ring .hole {
+  width: 75px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #fff;
+}
+footer .yellow-ring {
+  width: 200px;
+  background-color: #FFE81B;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -80px;
+  right: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .yellow-ring .hole {
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 @media (min-width: 743px) {
