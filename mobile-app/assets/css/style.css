@@ -18,13 +18,13 @@ html {
 
 .container {
   padding: 0 40px;
-  height: 100%;
   margin: 0 auto;
 }
 
 .content-wrapper {
   padding-top: 50px;
-  height: 100%;
+  padding-bottom: 220px;
+  min-height: 100vh;
   position: relative;
 }
 .content-wrapper .welcome-header {
@@ -108,9 +108,6 @@ html {
 .content-wrapper .auth-header .controller .btn-back i {
   color: #00B0FF;
 }
-.content-wrapper .auth-header .controller .btn-back:hover {
-  background-color: #00B0FF;
-}
 .content-wrapper .auth-header .controller p {
   color: #fff;
   font-size: 12px;
@@ -167,6 +164,37 @@ html {
 }
 .content-wrapper .home-header .btn-setting i {
   color: #00B0FF;
+}
+.content-wrapper .pages-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.content-wrapper .pages-header .btn-back {
+  border-radius: 12px;
+  width: 40px;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 0px 4px 1px rgba(221, 221, 221, 0.5058823529);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.content-wrapper .pages-header .btn-back i {
+  color: #00B0FF;
+}
+.content-wrapper .pages-header h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .login-selection {
@@ -316,9 +344,114 @@ html {
   font-size: 12px;
 }
 
-footer {
-  height: 220px;
+.data-management-list {
+  margin-top: 40px;
+}
+.data-management-list form .form-group {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.data-management-list form .form-group .form-control {
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: rgba(0, 174, 255, 0.0784313725);
+}
+.data-management-list form .form-group .icon {
+  position: absolute;
+  right: 25px;
+}
+.data-management-list form .form-group .icon i {
+  color: #00B0FF;
+}
+.data-management-list form .btn-add {
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #00B0FF;
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+.data-management-list h2 {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.data-management-list .data-group {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+.data-management-list .data-group .card {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 1px rgba(221, 221, 221, 0.5058823529);
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+}
+.data-management-list .data-group .card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #00B0FF;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data-management-list .data-group .card .icon i {
+  color: #fff;
+}
+.data-management-list .data-group .card .general {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.data-management-list .data-group .card .general h5 {
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+.data-management-list .data-group .card .general p {
+  color: #444;
+  font-size: 10px;
+}
+.data-management-list .data-group .card .action {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+.data-management-list .data-group .card .action i {
+  color: #e72020;
+}
+.data-management-list .data-group .card .action .count-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #00B0FF;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
   bottom: 0 !important;
 }
 footer .blue-ring {
@@ -328,7 +461,7 @@ footer .blue-ring {
   aspect-ratio: 1/1;
   border-radius: 100%;
   position: absolute;
-  left: -70px;
+  left: -30px;
   bottom: 50px;
   display: flex;
   align-items: center;
@@ -346,8 +479,8 @@ footer .yellow-ring {
   aspect-ratio: 1/1;
   border-radius: 100%;
   position: absolute;
-  bottom: -80px;
-  right: -100px;
+  bottom: -60px;
+  right: -80px;
   display: flex;
   align-items: center;
   justify-content: center;
