@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="theme-color" content="#0d0072" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/0297ba9f6f.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="assets/js/web.webmanifest">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <div class="container">
+                <header class="pages-header">
+                    <a href="" class="btn-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <h1>Riwayat TB</h1>
+                </header>
+                <section class="detail-option-list">
+                    <div class="child-info">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="general">
+                            <h5>Nama Anak</h5>
+                            <p>Umur :</p>
+                            <p>Tanggal lahir :</p>
+                        </div>
+                        <div class="action">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </section>
+                <footer>
+                    <div class="blue-ring">
+                        <div class="hole"></div>
+                    </div>
+                    <div class="yellow-ring">
+                        <div class="hole"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Chart.js Line Chart - Cubic interpolation mode'
+                    },
+                },
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true
+                        }
+                    },
+                    y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        },
+                        suggestedMin: -10,
+                        suggestedMax: 200
+                    }
+                }
+            },
+        };
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

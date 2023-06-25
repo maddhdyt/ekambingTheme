@@ -180,9 +180,16 @@ html {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: all 300ms;
 }
 .content-wrapper .pages-header .btn-back i {
   color: #00B0FF;
+}
+.content-wrapper .pages-header .btn-back:hover {
+  background-color: #00B0FF;
+}
+.content-wrapper .pages-header .btn-back:hover i {
+  color: #fff;
 }
 .content-wrapper .pages-header h1 {
   font-size: 18px;
@@ -446,6 +453,91 @@ html {
   color: #fff;
   font-size: 10px;
   text-decoration: none;
+}
+
+.detail-option-list .child-info {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 1px rgba(221, 221, 221, 0.5058823529);
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  margin-top: 40px;
+}
+.detail-option-list .child-info .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #00B0FF;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail-option-list .child-info .icon i {
+  color: #fff;
+}
+.detail-option-list .child-info .general {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.detail-option-list .child-info .general h5 {
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+.detail-option-list .child-info .general p {
+  color: #444;
+  font-size: 10px;
+}
+.detail-option-list .child-info .action {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+.detail-option-list .child-info .action i {
+  color: #e72020;
+}
+.detail-option-list .child-info .action .count-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #00B0FF;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+.detail-option-list h2 {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.detail-option-list .menu-group {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.detail-option-list .menu-group .btn {
+  width: 100%;
+  height: 50px;
+  background-color: #00B0FF;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail-option-list .menu-group .btn i {
+  position: absolute;
+  right: 20px;
 }
 
 footer {
