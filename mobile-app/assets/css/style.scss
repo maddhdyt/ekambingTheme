@@ -374,6 +374,7 @@ html {
         @include grid(1, 1, 20px);
 
         .card {
+            text-decoration: none;
             border-radius: 12px;
             background-color: #fff;
             padding: 20px 15px;
@@ -484,6 +485,7 @@ html {
             align-items: center;
             position: relative;
             gap: 15px;
+            text-decoration: none;
 
             .icon {
                 width: 40px;
@@ -594,6 +596,46 @@ html {
             }
         }
     }
+    .child-status {
+        margin-top: 30px;
+        .general {
+            color: #444;
+            font-size: 10px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .status {
+            margin-top: 16px;
+            @include grid(2, 1, 0px);
+            .card {
+                p {
+                    font-size: 12px;
+                    color: #444;
+                    font-weight: 500;
+                    margin-bottom: 6px;
+                }
+                h6 {
+                    padding: 7px 35px;
+                    border-radius: 8px;
+                    font-size: 10px;
+                    font-weight: 500;
+                    width: fit-content;
+                }
+                h6.yellow {
+                    background-color: #FFE81B20;
+                    color: #FF5C00;
+                }
+                h6.red {
+                    background-color: #e7202020;
+                    color: #e72020;
+                }
+                h6.blue{
+                    background-color: #00B0FF20;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
     h2 {
         font-size: 14px;
         color: #444;
@@ -620,6 +662,170 @@ html {
             }
         }
     }
+    .history-group {
+        @include grid(1, 1, 12px);
+        margin-top: 12px;
+        .card {
+            border-radius: 12px;
+            padding: 15px 20px;
+            header {
+                padding-bottom: 6px;
+                border-bottom: 1px solid #fff;
+                display: flex;
+                justify-content: space-between;
+                .general {
+                    p {
+                        color: #444;
+                        font-size: 8px;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #444;
+                        margin-top: 4px;
+                    }
+                }
+                .status {
+                    border-radius: 8px;
+                    padding: 4px 15px;
+                    color: #fff;
+                    font-size: 8px;
+                    height: fit-content;
+                }
+            }
+            .card-footer {
+                @include grid(2, 1, 0px);
+                margin-top: 10px;
+                .col {
+                    p {
+                        font-size: 6px;
+                        color: #444;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        color: #444;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .red {
+            background-color: #e7202020;
+            header {
+                .status {
+                    background-color: #e72020;
+                }
+            }
+        }
+
+        .yellow {
+            background-color: #ffe81b30;
+            header {
+                .status {
+                    background-color: #FFE81B;
+                }
+            }
+        }
+
+        .blue {
+            background-color: #00aeff10;
+            header {
+                .status {
+                    background-color: #00B0FF;
+                }
+            }
+        }
+    }
+}
+
+.ideal-counter {
+    .form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .form-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+            select {
+                appearance: none;
+            }
+            .form-control {
+                padding: 16px 20px;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 12px;
+                background-color: #00B0FF20;
+                font-size: 12px;
+                color: #6c6c6c;
+            }
+            .btn-submit {
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 16px 20px;
+                border-radius: 12px;
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            i {
+                position: absolute;
+                right: 20px;
+                font-size: 14px;
+                color: $primary-color;
+            }
+        }
+    }
+    .detail-box {
+        padding: 25px;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0px 0px 4px 1px #DDD;
+        margin-top: 40px;
+        header {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            color: #444;
+            font-weight: 600;
+        }
+        .content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            div {
+                display: flex;
+                justify-content: space-between;
+                p {
+                    width: fit-content;
+                    color: #444;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#chart {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+#chart2 {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-top: 20px;
 }
 
 footer {

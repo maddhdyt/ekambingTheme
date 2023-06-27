@@ -23,10 +23,10 @@
         <div class="content-wrapper">
             <div class="container">
                 <header class="pages-header">
-                    <a href="#" class="btn-back" onclick="history.back()">
+                    <a href="" class="btn-back">
                         <i class="fa-solid fa-chevron-left"></i>
                     </a>
-                    <h1>Riwayat TB</h1>
+                    <h1>KMS</h1>
                 </header>
                 <section class="detail-option-list">
                     <div class="child-info">
@@ -42,73 +42,25 @@
                             <i class="fa-regular fa-trash-can"></i>
                         </div>
                     </div>
-                    <div id="chart"></div>
-                    <h2>Riwayat Pengukuran</h2>
-                    <div class="history-group">
-                        <div class="card red">
-                            <header>
-                                <div class="general">
-                                    <p>12-05-2023</p>
-                                    <h4>Umur 30 Bulan </h4>
-                                </div>
-                                <div class="status">
-                                    Stunting
-                                </div>
-                            </header>
-                            <div class="card-footer">
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
+                    <div class="child-status">
+                        <p class="general">Tanggal Ukur : 12-09-2023 </p>
+                        <p class="general">BB : 20kg </p>
+                        <p class="general">TB/PB : 50cm </p>
+                        <div class="status">
+                            <div class="card">
+                                <p>Status BB</p>
+                                <h6 class="yellow">Lebih</h6>
                             </div>
-                        </div>
-                        <div class="card yellow">
-                            <header>
-                                <div class="general">
-                                    <p>12-05-2023</p>
-                                    <h4>Umur 30 Bulan </h4>
-                                </div>
-                                <div class="status">
-                                    Stunting
-                                </div>
-                            </header>
-                            <div class="card-footer">
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card blue">
-                            <header>
-                                <div class="general">
-                                    <p>12-05-2023</p>
-                                    <h4>Umur 30 Bulan </h4>
-                                </div>
-                                <div class="status">
-                                    Stunting
-                                </div>
-                            </header>
-                            <div class="card-footer">
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
-                                <div class="col">
-                                    <p>12-05-2023</p>
-                                    <h4>40cm</h4>
-                                </div>
+                            <div class="card">
+                                <p>Status TB/PB</p>
+                                <h6 class="red">Stunting</h6>
                             </div>
                         </div>
                     </div>
+                    <h2>Kurva BB</h2>
+                    <div id="chart"></div>
+                    <h2>Kurva TB/PB</h2>
+                    <div id="chart2"></div>
                 </section>
                 <footer>
                     <div class="blue-ring">
@@ -158,7 +110,9 @@
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
         chart.render();
+        chart2.render();
 
     </script>
 </body>
