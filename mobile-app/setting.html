@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <meta name="theme-color" content="#0d0072" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/0297ba9f6f.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="assets/js/web.webmanifest">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <div class="container">
+                <header class="pages-header">
+                    <a href="" class="btn-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <h1>Pengaturan</h1>
+                </header>
+                <section class="setting-wrapper">
+                    <h2>Edit Profil</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn-submit">Simpan Perubahan</button>
+                    </form>
+                </section>
+                <footer>
+                    <div class="blue-ring">
+                        <div class="hole"></div>
+                    </div>
+                    <div class="yellow-ring">
+                        <div class="hole"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+        var options = {
+            series: [{
+                name: "Desktops",
+                data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+            }],
+            chart: {
+                height: 350,
+                type: 'line',
+                zoom: {
+                    enabled: false
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            title: {
+                align: 'left'
+            },
+            grid: {
+                row: {
+                    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                    opacity: 0.5
+                },
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+        chart2.render();
+
+    </script>
+</body>
+
+</html>

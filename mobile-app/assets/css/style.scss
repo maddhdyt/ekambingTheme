@@ -143,7 +143,7 @@ html {
                 aspect-ratio: 1/1;
                 border-radius: 12px;
                 background-color: #fff;
-                border: none;
+                border: transparent;
                 outline: none;
                 cursor: pointer;
                 @include flex(center, center);
@@ -238,6 +238,7 @@ html {
 
             &:hover {
                 background-color: $primary-color;
+
                 i {
                     color: #fff;
                 }
@@ -325,7 +326,7 @@ html {
                 padding: 18px 25px;
                 border-radius: 8px;
                 background-color: #00b3ff2a;
-                border: none;
+                border: transparent;
                 outline: none;
                 color: #444;
 
@@ -340,7 +341,7 @@ html {
             border-radius: 8px;
             background-color: $primary-color;
             color: #fff;
-            border: none;
+            border: transparent;
             outline: none;
             width: 100%;
         }
@@ -432,8 +433,8 @@ html {
             .form-control {
                 padding: 15px 25px;
                 border-radius: 12px;
-                font-size: 14px;
-                border: none;
+                font-size: 12px;
+                border: transparent;
                 outline: none;
                 width: 100%;
                 background: #00aeff14;
@@ -452,7 +453,7 @@ html {
         .btn-add {
             padding: 15px 25px;
             border-radius: 12px;
-            border: none;
+            border: transparent;
             outline: none;
             width: 100%;
             background: $primary-color;
@@ -460,8 +461,8 @@ html {
             margin-top: 20px;
             color: #fff;
             text-decoration: none;
-            font-size: 14px;
-        text-align: center;
+            font-size: 12px;
+            text-align: center;
         }
     }
 
@@ -596,17 +597,21 @@ html {
             }
         }
     }
+
     .child-status {
         margin-top: 30px;
+
         .general {
             color: #444;
             font-size: 10px;
             margin-bottom: 8px;
             font-weight: 500;
         }
+
         .status {
             margin-top: 16px;
             @include grid(2, 1, 0px);
+
             .card {
                 p {
                     font-size: 12px;
@@ -614,6 +619,7 @@ html {
                     font-weight: 500;
                     margin-bottom: 6px;
                 }
+
                 h6 {
                     padding: 7px 35px;
                     border-radius: 8px;
@@ -621,30 +627,36 @@ html {
                     font-weight: 500;
                     width: fit-content;
                 }
+
                 h6.yellow {
                     background-color: #FFE81B20;
                     color: #FF5C00;
                 }
+
                 h6.red {
                     background-color: #e7202020;
                     color: #e72020;
                 }
-                h6.blue{
+
+                h6.blue {
                     background-color: #00B0FF20;
                     color: $primary-color;
                 }
             }
         }
     }
+
     h2 {
         font-size: 14px;
         color: #444;
         font-weight: 600;
         margin-top: 30px;
     }
+
     .menu-group {
         @include grid(1, 1, 12px);
         margin-top: 12px;
+
         .btn {
             width: 100%;
             height: 50px;
@@ -656,28 +668,34 @@ html {
             font-weight: 500;
             position: relative;
             @include flex(center, center);
+
             i {
                 position: absolute;
                 right: 20px;
             }
         }
     }
+
     .history-group {
         @include grid(1, 1, 12px);
         margin-top: 12px;
+
         .card {
             border-radius: 12px;
             padding: 15px 20px;
+
             header {
                 padding-bottom: 6px;
                 border-bottom: 1px solid #fff;
                 display: flex;
                 justify-content: space-between;
+
                 .general {
                     p {
                         color: #444;
                         font-size: 8px;
                     }
+
                     h4 {
                         font-size: 14px;
                         font-weight: 600;
@@ -685,6 +703,7 @@ html {
                         margin-top: 4px;
                     }
                 }
+
                 .status {
                     border-radius: 8px;
                     padding: 4px 15px;
@@ -693,14 +712,17 @@ html {
                     height: fit-content;
                 }
             }
+
             .card-footer {
                 @include grid(2, 1, 0px);
                 margin-top: 10px;
+
                 .col {
                     p {
                         font-size: 6px;
                         color: #444;
                     }
+
                     h4 {
                         font-size: 18px;
                         color: #444;
@@ -709,8 +731,10 @@ html {
                 }
             }
         }
+
         .red {
             background-color: #e7202020;
+
             header {
                 .status {
                     background-color: #e72020;
@@ -720,6 +744,7 @@ html {
 
         .yellow {
             background-color: #ffe81b30;
+
             header {
                 .status {
                     background-color: #FFE81B;
@@ -729,6 +754,7 @@ html {
 
         .blue {
             background-color: #00aeff10;
+
             header {
                 .status {
                     background-color: #00B0FF;
@@ -744,26 +770,30 @@ html {
         display: flex;
         flex-direction: column;
         gap: 12px;
+
         .form-group {
             position: relative;
             display: flex;
             align-items: center;
+
             select {
                 appearance: none;
             }
+
             .form-control {
                 padding: 16px 20px;
                 width: 100%;
-                border: none;
+                border: transparent;
                 outline: none;
                 border-radius: 12px;
                 background-color: #00B0FF20;
                 font-size: 12px;
                 color: #6c6c6c;
             }
+
             .btn-submit {
                 width: 100%;
-                border: none;
+                border: transparent;
                 outline: none;
                 padding: 16px 20px;
                 border-radius: 12px;
@@ -772,6 +802,7 @@ html {
                 font-size: 12px;
                 font-weight: 500;
             }
+
             i {
                 position: absolute;
                 right: 20px;
@@ -780,12 +811,14 @@ html {
             }
         }
     }
+
     .detail-box {
         padding: 25px;
         border-radius: 12px;
         background-color: #fff;
         box-shadow: 0px 0px 4px 1px #DDD;
         margin-top: 40px;
+
         header {
             padding-bottom: 15px;
             border-bottom: 1px solid #ddd;
@@ -793,14 +826,17 @@ html {
             color: #444;
             font-weight: 600;
         }
+
         .content {
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             gap: 8px;
+
             div {
                 display: flex;
                 justify-content: space-between;
+
                 p {
                     width: fit-content;
                     color: #444;
@@ -818,6 +854,71 @@ html {
     border: 1px solid #ddd;
     border-radius: 12px;
     margin-top: 20px;
+}
+
+.setting-wrapper {
+    margin-top: 40px;
+
+    h2 {
+        font-size: 14px;
+        color: #444;
+        font-weight: 600;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 12px;
+        margin-top: 15px;
+        .form-group {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .form-control {
+                padding: 15px 25px;
+                border-radius: 12px;
+                font-size: 12px;
+                border: transparent;
+                outline: none;
+                width: 100%;
+                background: #00aeff14;
+            }
+
+            .icon {
+                position: absolute;
+                right: 25px;
+
+                i {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .btn-submit {
+            width: fit-content;
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: transparent;
+            outline: none;
+            background: $primary-color;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+// Form Component
+.form-control {
+    transition: all 400ms;
+    &:focus {
+        border: 1px solid $primary-color !important;
+    }
 }
 
 #chart2 {

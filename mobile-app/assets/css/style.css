@@ -98,7 +98,7 @@ html {
   aspect-ratio: 1/1;
   border-radius: 12px;
   background-color: #fff;
-  border: none;
+  border: transparent;
   outline: none;
   cursor: pointer;
   display: flex;
@@ -265,7 +265,7 @@ html {
   padding: 18px 25px;
   border-radius: 8px;
   background-color: rgba(0, 179, 255, 0.1647058824);
-  border: none;
+  border: transparent;
   outline: none;
   color: #444;
 }
@@ -280,7 +280,7 @@ html {
   border-radius: 8px;
   background-color: #00B0FF;
   color: #fff;
-  border: none;
+  border: transparent;
   outline: none;
   width: 100%;
 }
@@ -363,8 +363,8 @@ html {
 .data-management-list form .form-group .form-control {
   padding: 15px 25px;
   border-radius: 12px;
-  font-size: 14px;
-  border: none;
+  font-size: 12px;
+  border: transparent;
   outline: none;
   width: 100%;
   background: rgba(0, 174, 255, 0.0784313725);
@@ -379,7 +379,7 @@ html {
 .data-management-list form .btn-add {
   padding: 15px 25px;
   border-radius: 12px;
-  border: none;
+  border: transparent;
   outline: none;
   width: 100%;
   background: #00B0FF;
@@ -387,7 +387,7 @@ html {
   margin-top: 20px;
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 .data-management-list h2 {
@@ -672,7 +672,7 @@ html {
 .ideal-counter .form .form-group .form-control {
   padding: 16px 20px;
   width: 100%;
-  border: none;
+  border: transparent;
   outline: none;
   border-radius: 12px;
   background-color: rgba(0, 176, 255, 0.1254901961);
@@ -681,7 +681,7 @@ html {
 }
 .ideal-counter .form .form-group .btn-submit {
   width: 100%;
-  border: none;
+  border: transparent;
   outline: none;
   padding: 16px 20px;
   border-radius: 12px;
@@ -734,6 +734,65 @@ html {
   border: 1px solid #ddd;
   border-radius: 12px;
   margin-top: 20px;
+}
+
+.setting-wrapper {
+  margin-top: 40px;
+}
+.setting-wrapper h2 {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+}
+.setting-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+  margin-top: 15px;
+}
+.setting-wrapper form .form-group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.setting-wrapper form .form-group .form-control {
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 12px;
+  border: transparent;
+  outline: none;
+  width: 100%;
+  background: rgba(0, 174, 255, 0.0784313725);
+}
+.setting-wrapper form .form-group .icon {
+  position: absolute;
+  right: 25px;
+}
+.setting-wrapper form .form-group .icon i {
+  color: #00B0FF;
+}
+.setting-wrapper form .btn-submit {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 25px;
+  border-radius: 12px;
+  border: transparent;
+  outline: none;
+  background: #00B0FF;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-control {
+  transition: all 400ms;
+}
+.form-control:focus {
+  border: 1px solid #00B0FF !important;
 }
 
 #chart2 {
