@@ -8,6 +8,7 @@
 }
 body {
     overflow-x: hidden !important;
+    position: relative;
 }
 .open-nav {
     @apply !translate-x-0;
