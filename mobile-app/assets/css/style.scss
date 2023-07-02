@@ -859,6 +859,66 @@ html {
 .setting-wrapper {
     margin-top: 40px;
 
+    .user-info {
+        padding: 15px;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0px 0px 4px 1px #dddddd81;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: $primary-color;
+            flex-shrink: 0;
+            @include flex(center, center);
+
+            i {
+                color: #fff;
+            }
+        }
+
+        .general {
+            width: fit-content;
+
+            h5 {
+                color: #444;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            p {
+                color: #444;
+                font-size: 10px;
+            }
+        }
+
+        .action {
+            position: absolute;
+            right: 25px;
+            cursor: pointer;
+
+            i {
+                color: #e72020;
+            }
+
+            .count-btn {
+                padding: 8px 16px;
+                border-radius: 8px;
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+
     h2 {
         font-size: 14px;
         color: #444;
