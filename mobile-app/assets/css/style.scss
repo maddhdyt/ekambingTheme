@@ -634,6 +634,25 @@ html {
             }
         }
 
+        .btn-count {
+             position: absolute;
+                right: 25px;
+                cursor: pointer;
+
+                i {
+                    color: $primary-color;
+                }
+
+                .count-btn {
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    background-color: $primary-color;
+                    color: #fff;
+                    font-size: 10px;
+                    text-decoration: none;
+                }
+        }
+
         .action-group {
             display: flex;
             gap: 15px;
