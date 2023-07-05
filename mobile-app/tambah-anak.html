@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="theme-color" content="#0d0072" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/0297ba9f6f.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="assets/js/web.webmanifest">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <div class="container">
+                <header class="pages-header">
+                    <a href="#" class="btn-back" onclick="history.back()">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <h1>Tambah Anak</h1>
+                </header>
+                <section class="data-management-list">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="NIK">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="No KK">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" placeholder="Tanggal Lahir">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="">Jenis Kelamin</option>
+                                <option value="L">Laki-laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                            <div class="icon">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Anak ke -">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Berat Badan Saat Lahir (kg)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Panjang Badan Saat Lahir (cm)">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-cancel" onclick="history.back()">Cancel</button><button type="submit" class="btn-save">Simpan</button>
+                        </div>
+                    </form>
+                </section>
+                <footer>
+                    <div class="blue-ring">
+                        <div class="hole"></div>
+                    </div>
+                    <div class="yellow-ring">
+                        <div class="hole"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>
