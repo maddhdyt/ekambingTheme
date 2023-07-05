@@ -639,6 +639,7 @@ html {
   color: #444;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 .detail-option-list form .btn-group .btn-save {
   padding: 15px 25px;
