@@ -425,6 +425,7 @@ html {
 .data-management-list form .form-group .icon {
   position: absolute;
   right: 25px;
+  pointer-events: none;
 }
 .data-management-list form .form-group .icon i {
   color: #00B0FF;

@@ -496,6 +496,7 @@ html {
             .icon {
                 position: absolute;
                 right: 25px;
+                pointer-events: none;
 
                 i {
                     color: $primary-color;
